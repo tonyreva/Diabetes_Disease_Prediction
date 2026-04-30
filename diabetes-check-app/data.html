@@ -1,0 +1,136 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <!-- <link rel="stylesheet" href="./style1.css"> -->
+     <!-- <link rel="shortcut icon" href="url_for('static,filename='./mylogo.png')"> -->
+     <style>
+        legend{
+    font-family: 'Times New Roman', Times, serif;
+}
+fieldset{
+    height:750px;
+    width:650px;
+    margin-left:380px;
+    background-color:blanchedalmond;
+}
+small{
+    color:red;
+}
+button{
+    margin-left: 170px;
+    border-radius:10%;
+}
+button:hover{
+    cursor:pointer;
+}
+#dd1{
+    color: red;
+}
+#dd2{
+    color: green;
+}
+
+#dd3{
+    padding: 20px;
+    border:2px solid;
+    border-radius: 10px;
+}
+     </style>
+     <script>
+        function validateAge(){
+            const ageField=document.getElementById("d7");
+            const messageDisplay= document.getElementById("resultMsg");
+
+            const age=parseInt(ageField.value);
+            if(age<=20){
+                messageDisplay.innerText="please enter a valid number.";
+                messageDisplay.className="status-box error";
+            }
+        }
+        
+     </script>
+</head>
+<body>
+    <fieldset align="center" id="d1">
+        <legend><H3>ENTER THE DETAILS
+            TO CHECK WHETHER THE PERSON IS 
+            HAVING DIABETES OR NOT
+        </H3></legend>
+         <div id="resultMsg" class="status-box"></div>
+        <br><br><br><br><br><br><br><br>
+   <form action="#" method="POST" align="center">
+    <table id="dd3" align="center" cellpadding="5px">
+        <tr>
+            <td><label for="d7">
+        Enter the Age
+    </label> &nbsp; </td>
+            <td><input type="number" name="age" id="d7" placeholder="enter the age">
+            <small>(age should be greater than 20)</small></td>
+        </tr>
+        <tr>
+            <td><label for="d2">Enter the BloodPressure</label>&nbsp;</td>
+            <td>    
+    <input type="number" name="bloodpressure" id="d2" placeholder="enter the bloodpressure"></td>
+        </tr>
+        <tr>
+            <td> <label for="d3">Enter the Insulin</label> &nbsp;</td>
+            <td> <input type="number" name="insulin" id="d3" placeholder="enter the insulin"></td>
+        </tr>
+        <tr>
+            <td><label for="d4">Enter the Glucose</label> &nbsp;</td>
+            <td> <input type="number" name="glucose" id="d4" placeholder="glucose"></td>
+        </tr>
+        <br>
+        <tr>
+            <td colspan="2"><button onclick="validateAge()">submit</button></td>
+            <!-- <td></td> -->
+        </tr>
+    </table>
+   </form> 
+   <br><br><br>
+  
+   <table align="center">
+    <tr>
+        <td>
+            {% if age!=None %}
+                <h3>{{age}}</h3>
+            {% endif %}
+         </td>
+    </tr>
+    <tr>
+        <td>
+            {% if blood!=None %}
+                <h3>{{blood}}</h3>
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {% if glucose!=None %}
+                <h3>{{glucose}}</h3>
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {% if insulin!=None %}
+                <h3>{{insulin}}</h3>
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {% if result=="Diabetes" %}
+                <h3 id="dd1">{{result1}}</h3>
+            {% else %}
+                <h3 id="dd2">{{result1}}</h3>
+            {% endif %}
+        </td>
+    </tr>
+   </table>
+   </fieldset>
+   
+</body>
+</html>

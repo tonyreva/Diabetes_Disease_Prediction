@@ -1,0 +1,12 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\tonyr\\Downloads\\ojdbc6-11.2.0.4.jar",
+        "c:\\Users\\tonyr\\Downloads\\mysql-connector-j-8.1.0.jar",
+        "c:\\Users\\tonyr\\Downloads\\javax.servlet-api-4.0.1-javadoc (1).jar",
+        "c:\\Users\\tonyr\\Downloads\\javax.servlet-api-4.0.1.jar",
+        "c:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\lib\\servlet-api.jar",
+        "c:\\Users\\tonyr\\Downloads\\javalin-6.7.0-sources.jar"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
+}

@@ -1,0 +1,31 @@
+legend{
+    font-family: 'Times New Roman', Times, serif;
+}
+fieldset{
+    height:650px;
+    width:650px;
+    margin-left:380px;
+    background-color:blanchedalmond;
+}
+small{
+    color:red;
+}
+button{
+    margin-left: 170px;
+    border-radius:10%;
+}
+button:hover{
+    cursor:pointer;
+}
+#dd1{
+    color: red;
+}
+#dd2{
+    color: green;
+}
+
+#dd3{
+    padding: 20px;
+    border:2px solid;
+    border-radius: 10px;
+}

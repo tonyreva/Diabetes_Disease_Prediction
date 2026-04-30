@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <style>
+        a{
+            color:black;
+            text-decoration-line: none;
+        }
+        a:hover{
+            text-decoration-line:underline ;
+        }
+        main header{
+            margin-top:30px;
+            background-color: cadetblue;
+            width:850px;
+            height:80px;
+            border-radius: 20px;
+            padding:3px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:85px;
+        }
+        main section{
+            border: 2px solid black;
+            height:540px;
+            width: 560px;
+            border-radius: 20px;
+            position: relative;
+            background-color:lightgoldenrodyellow;
+            overflow-y:hidden;
+            overflow-y: scroll;
+        }
+        main section>ul{
+            position: absolute;
+            left:150px;
+            top:180px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        .d1 summary{
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+        }
+        .d2 li{
+            padding-top: 10px;
+            font-weight: 500;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header><h2>DIABETES DISEASE PREDICTION DATA USING ENSEMBLING TECHNIQUES</h2></header>
+    <section>
+    <ul type="none">
+        <li><details class="d1">
+            <summary>BOOSTING</summary>
+            <ul type="none" class="d2">
+                <li><a href="/decisiontree" target="_blank">Decision Tree</a></li>
+                <li><a href="/gradientboosting" target="_blank">Gradient Boosting</a></li>
+                <li><a href="/adaboosting" target="_blank">Ada Boosting</a></li>
+            </ul>
+        </details>
+        </li>
+        <li>
+            <details class="d1">
+                <summary>BAGGING</summary>
+                <ul type="none" class="d2">
+                    <li> <a href="/randomforest" target="_blank">Random Forest</a></li>
+                    <li> <a href="/baggingclassifier" target="_blank">Bagging Classifier</a></li>
+                </ul>
+            </details>
+        </li>
+        <li>
+            <details class="d1">
+                <summary>STACKING</summary>
+                <ul type="none" class="d2">
+                    <li><a href="/logisticregression" target="_blank">Logistic Regression</a></li>
+                    <li><a href="/stackingclassifier" target="_blank">Stacking Classifier</a></li>
+                    <li><a href="/votingclassifier" target="_blank">Voting Classifier</a></li>
+                </ul>
+            </details>
+        </li>
+        <li>
+             <details class="d1">
+                <summary>CONFUSION MATRIX</summary>
+                <ul type="none" class="d2">
+                    <li><a href="/decisiontreeCn" target="_blank">Decision Tree confusion Matrix</a></li>
+                    <li><a href="/randomforestCn" target="_blank">Random Forest Confusion Matrix</a></li>
+                </ul>
+            </details>
+        </li>
+        <li>
+            <details class="d1">
+                <summary>PCA</summary>
+                <ul type="none" class="d2">
+                    <li><a href="/pcanfeatures" target="_blank">PCA N Features Prediction</a></li>
+                      <li><a href="/pcafeaturesAn" target="_blank">PCA Analysis Feature Prediction</a></li>
+                </ul>
+            </details>
+        </li>
+    </ul>
+    </section>
+</main>
+</body>
+</html>
